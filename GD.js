@@ -80,6 +80,16 @@ const translations = {
         invictusDescription: 'Première place à la compétition de débat Invictus',
         invictusTheme: 'L\'homme est un loup pour l\'homme',
         invictusSection: 'Section: Arabe',
+        allStarTitle: 'All Star Debate',
+        allStarDescription: 'Participation à la compétition de débat All Star Debate',
+        allStarTheme: 'Compétition d\'élite des meilleurs débatteurs',
+        allStarSection: 'Section: Arabe',
+        participants: 'Participants',
+        allStarChampionTitle: 'All Star Debate - Champion',
+        allStarChampionDescription: 'Victoire à la compétition de débat All Star Debate',
+        allStarChampionTheme: 'Compétition d\'élite des meilleurs débatteurs',
+        allStarChampionSection: 'Section: Arabe',
+        champion: 'Champion',
         winningTeam: 'Équipe Gagnante',
         teamMembers: 'Membres de l\'équipe',
         evenementsTitle: '🎪 Notre Événement',
@@ -140,6 +150,16 @@ const translations = {
         invictusDescription: 'First place in the Invictus debate competition',
         invictusTheme: 'Man is a wolf to man',
         invictusSection: 'Section: Arabic',
+        allStarTitle: 'All Star Debate',
+        allStarDescription: 'Participation in the All Star Debate competition',
+        allStarTheme: 'Elite competition of the best debaters',
+        allStarSection: 'Section: Arabic',
+        participants: 'Participants',
+        allStarChampionTitle: 'All Star Debate - Champion',
+        allStarChampionDescription: 'Victory in the All Star Debate competition',
+        allStarChampionTheme: 'Elite competition of the best debaters',
+        allStarChampionSection: 'Section: Arabic',
+        champion: 'Champion',
         winningTeam: 'Winning Team',
         teamMembers: 'Team Members',
         evenementsTitle: '🎪 Our Event',
@@ -200,6 +220,16 @@ const translations = {
         invictusDescription: 'المركز الأول في مسابقة المناظرة Invictus',
         invictusTheme: 'الإنسان ذئب للإنسان',
         invictusSection: 'القسم: العربية',
+        allStarTitle: 'All Star Debate',
+        allStarDescription: 'المشاركة في مسابقة المناظرة All Star Debate',
+        allStarTheme: 'مسابقة النخبة لأفضل المناظرين',
+        allStarSection: 'القسم: العربية',
+        participants: 'المشاركون',
+        allStarChampionTitle: 'All Star Debate - البطل',
+        allStarChampionDescription: 'الفوز في مسابقة المناظرة All Star Debate',
+        allStarChampionTheme: 'مسابقة النخبة لأفضل المناظرين',
+        allStarChampionSection: 'القسم: العربية',
+        champion: 'البطل',
         winningTeam: 'الفريق الفائز',
         teamMembers: 'أعضاء الفريق',
         evenementsTitle: '🎪 حدثنا',
@@ -253,7 +283,7 @@ const sectionContents = {
                             </div>
                             <div class="contact-details">
                                 <h3>Email</h3>
-                                <p>greatdebaters@ehtp.ac.ma</p>
+                                <p>great.debaters.ehtp@gmail.com</p>
                             </div>
                         </div>
                         
@@ -360,7 +390,7 @@ const sectionContents = {
                             </div>
                             <div class="contact-details">
                                 <h3>Email</h3>
-                                <p>greatdebaters@ehtp.ac.ma</p>
+                                <p>great.debaters.ehtp@gmail.com</p>
                             </div>
                         </div>
                         
@@ -467,7 +497,7 @@ const sectionContents = {
                             </div>
                             <div class="contact-details">
                                 <h3>البريد الإلكتروني</h3>
-                                <p>greatdebaters@ehtp.ac.ma</p>
+                                <p>great.debaters.ehtp@gmail.com</p>
                             </div>
                         </div>
                         
@@ -1527,6 +1557,79 @@ document.querySelectorAll('.nav-item').forEach(item => {
                                                 <li>Mohamed El-Afi</li>
                                                 <li>Imane Aghad</li>
                                                 <li>Meryeme Dhaher</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="competition-card allstar-competition">
+                            <div class="competition-info">
+                                <h3>${translations[currentLang].allStarTitle}</h3>
+                                <p class="competition-description">${translations[currentLang].allStarDescription}</p>
+                                
+                                <div class="competition-details">
+                                    <div class="theme-section">
+                                        <h4>🎯 Thème de la compétition</h4>
+                                        <p class="theme-text">${translations[currentLang].allStarTheme}</p>
+                                    </div>
+                                    
+                                    <div class="section-info">
+                                        <h4>📚 Section</h4>
+                                        <p class="section-text">${translations[currentLang].allStarSection}</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="winning-team">
+                                    <h4>${translations[currentLang].participants}</h4>
+                                    <div class="team-content">
+                                        <div class="team-photo">
+                                            <img src="habib-afi.jpg" alt="Participants All Star Debate" class="team-image" style="object-fit: cover; object-position: center; width: 100%; height: 200px;">
+                                        </div>
+                                        <div class="team-members">
+                                            <h5>${translations[currentLang].participants}</h5>
+                                            <ul class="members-list">
+                                                <li>Mohamed El-Afi</li>
+                                                <li>Bekkali Mohammed El Habib</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="competition-card allstar-champion-competition">
+                            <div class="competition-trophy">
+                                <img src="all str.jpg" alt="Trophée All Star Debate Champion" class="trophy-image">
+                                <div class="trophy-glow"></div>
+                            </div>
+                            <div class="competition-info">
+                                <h3>${translations[currentLang].allStarChampionTitle}</h3>
+                                <p class="competition-description">${translations[currentLang].allStarChampionDescription}</p>
+                                
+                                <div class="competition-details">
+                                    <div class="theme-section">
+                                        <h4>🎯 Thème de la compétition</h4>
+                                        <p class="theme-text">${translations[currentLang].allStarChampionTheme}</p>
+                                    </div>
+                                    
+                                    <div class="section-info">
+                                        <h4>📚 Section</h4>
+                                        <p class="section-text">${translations[currentLang].allStarChampionSection}</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="winning-team">
+                                    <h4>${translations[currentLang].champion}</h4>
+                                    <div class="team-content">
+                                        <div class="team-photo">
+                                            <img src="champion de all star debate.jpg" alt="Champion All Star Debate" class="team-image" style="object-fit: cover; object-position: center; width: 100%; height: 200px;">
+                                        </div>
+                                        <div class="team-members">
+                                            <h5>${translations[currentLang].champion}</h5>
+                                            <ul class="members-list">
+                                                <li>Mohamed El-Afi</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -2638,17 +2741,17 @@ const footerDescriptionTranslations = {
 const footerContactTranslations = {
   fr: [
     '<i class="fas fa-map-marker-alt"></i> EHTP, Route d\'El Jadida, Casablanca',
-    '<i class="fas fa-envelope"></i> greatdebaters@ehtp.ac.ma',
+    '<i class="fas fa-envelope"></i> great.debaters.ehtp@gmail.com',
     '<i class="fas fa-phone"></i> +212  7 02 24 55 29'
   ],
   en: [
     '<i class="fas fa-map-marker-alt"></i> Hassania School of Public Works, Route d\'El Jadida, Casablanca',
-    '<i class="fas fa-envelope"></i> greatdebaters@ehtp.ac.ma',
+    '<i class="fas fa-envelope"></i> great.debaters.ehtp@gmail.com',
     '<i class="fas fa-phone"></i> +212  7 02 24 55 29'
   ],
   ar: [
     '<i class="fas fa-map-marker-alt"></i> المدرسة الحسنية للأشغال العمومية، طريق الجديدة، الدار البيضاء',
-    '<i class="fas fa-envelope"></i> greatdebaters@ehtp.ac.ma',
+    '<i class="fas fa-envelope"></i> great.debaters.ehtp@gmail.com',
     '<i class="fas fa-phone"></i> +212  7 02 24 55 29'
   ]
 };
