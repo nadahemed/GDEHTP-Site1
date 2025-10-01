@@ -1,5 +1,7 @@
-*.jpg
-*.png
-*.jpeg
-*.gif
-images/
+# Ignore system files
+desktop.ini
+Thumbs.db
+
+# Ignore backup files
+*_backup.*
+*.bak
