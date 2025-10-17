@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "GD.html",
+      "src": "**/*",
       "use": "@vercel/static"
     }
   ],
@@ -12,8 +12,23 @@
       "dest": "/GD.html"
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg))",
       "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/GD.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        }
+      ]
     }
   ]
 }
