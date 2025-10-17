@@ -1,0 +1,8 @@
+# GitHub Pages configuration
+include: [GD.html, GD.css, GD.js, LOGOGD.png, favicon.ico]
+exclude: [.github, .gitignore, netlify.toml]
+
+# Redirect root to GD.html
+redirect_from:
+  - /
+  - /index.html
