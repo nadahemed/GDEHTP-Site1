@@ -1,8 +1,17 @@
 # GitHub Pages configuration
-include: [GD.html, GD.css, GD.js, LOGOGD.png, favicon.ico]
+include: [GD.html, GD.css, GD.js, LOGOGD.png, favicon.ico, board/, equipe/, Trophees/]
 exclude: [.github, .gitignore, netlify.toml]
+
+# Enable Jekyll processing
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Redirect root to GD.html
 redirect_from:
   - /
   - /index.html
+
+# Force processing
+markdown: kramdown
+highlighter: rouge
