@@ -46,6 +46,7 @@ const translations = {
         palmares: 'Palmarès',
         bureau: 'Bureau',
         evenements: 'Événements',
+        revue: 'Revue',
         contact: 'Contact',
         label: 'FR',
         anniversaryTitle: '🎉 Anniversaire du club',
@@ -89,6 +90,10 @@ const translations = {
         allStarChampionDescription: 'Victoire à la compétition de débat All Star Debate',
         allStarChampionTheme: 'Compétition d\'élite des meilleurs débatteurs',
         allStarChampionSection: 'Section: Arabe',
+        allStarNationalChampionTitle: 'All Star Debate - Champion National',
+        allStarNationalChampionDescription: 'Mohamed El Afi - Champion National dans All Star Debate',
+        allStarNationalChampionTheme: 'Compétition d\'élite des meilleurs débatteurs',
+        allStarNationalChampionSection: 'Section: Arabe',
         champion: 'Champion',
         winningTeam: 'Équipe Gagnante',
         teamMembers: 'Membres de l\'équipe',
@@ -108,7 +113,10 @@ const translations = {
         englishSectionChief: 'Chef Section Anglaise',
         arabicSectionChief: 'Chef Section Arabe',
         sponsoringChief: 'Chef Sponsoring',
-        trainingChief: 'Chef Formation'
+        trainingChief: 'Chef Formation',
+        revueTitle: '📚 Revue',
+        revueSubtitle: 'Découvrez nos publications et articles de débat',
+        revueDescription: 'Notre revue est un espace dédié à la publication d\'articles, d\'analyses et de réflexions sur le débat, l\'éloquence et les sujets d\'actualité.'
     },
     en: {
         accueil: 'Home',
@@ -116,6 +124,7 @@ const translations = {
         palmares: 'Awards',
         bureau: 'Board',
         evenements: 'Events',
+        revue: 'Review',
         contact: 'Contact',
         label: 'EN',
         anniversaryTitle: '🎉 Club Anniversary',
@@ -159,6 +168,10 @@ const translations = {
         allStarChampionDescription: 'Victory in the All Star Debate competition',
         allStarChampionTheme: 'Elite competition of the best debaters',
         allStarChampionSection: 'Section: Arabic',
+        allStarNationalChampionTitle: 'All Star Debate - National Champion',
+        allStarNationalChampionDescription: 'Mohamed El Afi - National Champion in All Star Debate',
+        allStarNationalChampionTheme: 'Elite competition of the best debaters',
+        allStarNationalChampionSection: 'Section: Arabic',
         champion: 'Champion',
         winningTeam: 'Winning Team',
         teamMembers: 'Team Members',
@@ -178,7 +191,10 @@ const translations = {
         englishSectionChief: 'English Section Chief',
         arabicSectionChief: 'Arabic Section Chief',
         sponsoringChief: 'Sponsoring Chief',
-        trainingChief: 'Training Chief'
+        trainingChief: 'Training Chief',
+        revueTitle: '📚 Review',
+        revueSubtitle: 'Discover our publications and debate articles',
+        revueDescription: 'Our review is a space dedicated to publishing articles, analyses and reflections on debate, eloquence and current affairs.'
     },
     ar: {
         accueil: 'الرئيسية',
@@ -186,6 +202,7 @@ const translations = {
         palmares: 'الجوائز',
         bureau: 'المكتب',
         evenements: 'الأحداث',
+        revue: 'المجلة',
         contact: 'اتصل',
         label: 'AR',
         anniversaryTitle: '🎉 ذكرى تأسيس النادي',
@@ -229,6 +246,10 @@ const translations = {
         allStarChampionDescription: 'الفوز في مسابقة المناظرة All Star Debate',
         allStarChampionTheme: 'مسابقة النخبة لأفضل المناظرين',
         allStarChampionSection: 'القسم: العربية',
+        allStarNationalChampionTitle: 'All Star Debate - بطل وطني',
+        allStarNationalChampionDescription: 'محمد الأفيعي - بطل وطني في All Star Debate',
+        allStarNationalChampionTheme: 'مسابقة النخبة لأفضل المناظرين',
+        allStarNationalChampionSection: 'القسم: العربية',
         champion: 'البطل',
         winningTeam: 'الفريق الفائز',
         teamMembers: 'أعضاء الفريق',
@@ -248,7 +269,10 @@ const translations = {
         englishSectionChief: 'رئيس القسم الإنجليزي',
         arabicSectionChief: 'رئيس القسم العربي',
         sponsoringChief: 'رئيس الرعاية',
-        trainingChief: 'رئيس التدريب'
+        trainingChief: 'رئيس التدريب',
+        revueTitle: '📚 المجلة',
+        revueSubtitle: 'اكتشفوا منشوراتنا ومقالات المناظرة',
+        revueDescription: 'مجلتنا هي مساحة مخصصة لنشر المقالات والتحليلات والتأملات حول المناظرة والبلاغة وموضوعات الساعة.'
     }
 };
 const mainContent = document.getElementById('main-content');
@@ -1636,6 +1660,44 @@ document.querySelectorAll('.nav-item').forEach(item => {
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="competition-card allstar-national-champion-competition">
+                            <div class="competition-trophy">
+                                <img src="all str.jpg" alt="Trophée Champion National All Star Debate" class="trophy-image">
+                                <div class="trophy-glow"></div>
+                            </div>
+                            <div class="competition-info">
+                                <h3>${translations[currentLang].allStarNationalChampionTitle}</h3>
+                                <p class="competition-description">${translations[currentLang].allStarNationalChampionDescription}</p>
+                                
+                                <div class="competition-details">
+                                    <div class="theme-section">
+                                        <h4>🎯 Thème de la compétition</h4>
+                                        <p class="theme-text">${translations[currentLang].allStarNationalChampionTheme}</p>
+                                    </div>
+                                    
+                                    <div class="section-info">
+                                        <h4>📚 Section</h4>
+                                        <p class="section-text">${translations[currentLang].allStarNationalChampionSection}</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="winning-team">
+                                    <h4>${translations[currentLang].champion}</h4>
+                                    <div class="team-content">
+                                        <div class="team-photo">
+                                            <img src="equipe/IMG_4718.JPG" alt="Mohamed El Afi - Champion National All Star Debate" class="team-image" style="object-fit: cover; object-position: center; width: 100%; height: 200px;">
+                                        </div>
+                                        <div class="team-members">
+                                            <h5>${translations[currentLang].champion}</h5>
+                                            <ul class="members-list">
+                                                <li>Mohamed El Afi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="palmares-section">
@@ -2794,6 +2856,8 @@ function loadSection(section) {
         loadBureauSection();
     } else if (section === 'evenements') {
         loadEvenementsSection();
+    } else if (section === 'revue') {
+        loadRevueSection();
     } else if (section === 'contact') {
         renderContactSection(currentLang);
     } else {
@@ -2847,18 +2911,20 @@ function loadBureauSection() {
                         <div class="member-badge"><i class="fas fa-chart-line"></i></div>
                     </div>
                 </div>
-                
-                <!-- Secrétaire Général -->
-                <div class="bureau-member-card secretary-card">
+
+                <!-- Chef Formation -->
+                <div class="bureau-member-card training-card">
                     <div class="member-photo-frame">
-                        <img src="board/7med Final.png" alt="Ahmed Fouad Goughelt - Secrétaire Général" class="member-photo-img">
+                        <img src="board/niama.png" alt="Niama Abid - Chef Formation" class="member-photo-img">
                     </div>
                     <div class="member-info">
-                        <h3>${translations[currentLang].secretaryGeneral}</h3>
-                        <p class="member-name">Ahmed Fouad Goughelt</p>
-                        <div class="member-badge"><i class="fas fa-file-alt"></i></div>
+                        <h3>${translations[currentLang].trainingChief}</h3>
+                        <p class="member-name">Niama Abid</p>
+                        <div class="member-badge"><i class="fas fa-graduation-cap"></i></div>
                     </div>
                 </div>
+                
+                
                 
                 <!-- Chef Media & Design -->
                 <div class="bureau-member-card media-card">
@@ -2899,11 +2965,11 @@ function loadBureauSection() {
                 <!-- Chef Section Arabe -->
                 <div class="bureau-member-card arabic-card">
                     <div class="member-photo-frame">
-                        <img src="board/Salma.jpg" alt="Salma Bouabane - Chef Section Arabe" class="member-photo-img">
+                        <img src="board/afi.png" alt="Salma Bouabane - Chef Section Arabe" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].arabicSectionChief}</h3>
-                        <p class="member-name">Salma Bouabane</p>
+                        <p class="member-name">Mohamed EL Afi</p>
                         <div class="member-badge"><i class="fas fa-star-and-crescent"></i></div>
                     </div>
                 </div>
@@ -2911,26 +2977,16 @@ function loadBureauSection() {
                 <!-- Chef Sponsoring -->
                 <div class="bureau-member-card sponsoring-card">
                     <div class="member-photo-frame">
-                        <img src="board/HaBBASSI FINAL.png" alt="Zainab Habbassi - Chef Sponsoring" class="member-photo-img">
+                        <img src="board/zainab.png" alt="Zainab Qasmi - Chef Sponsoring" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].sponsoringChief}</h3>
-                        <p class="member-name">Zainab Habbassi</p>
+                        <p class="member-name">Zainab Qasmi</p>
                         <div class="member-badge"><i class="fas fa-handshake"></i></div>
                     </div>
                 </div>
                 
-                <!-- Chef Formation -->
-                <div class="bureau-member-card training-card">
-                    <div class="member-photo-frame">
-                        <img src="board/ISLAM finale.png" alt="Islam Oufir - Chef Formation" class="member-photo-img">
-                    </div>
-                    <div class="member-info">
-                        <h3>${translations[currentLang].trainingChief}</h3>
-                        <p class="member-name">Islam Oufir</p>
-                        <div class="member-badge"><i class="fas fa-graduation-cap"></i></div>
-                    </div>
-                </div>
+                
                 
                 <!-- Responsable Revue -->
                 <div class="bureau-member-card revue-card">
@@ -3229,6 +3285,88 @@ function loadEvenementsSection() {
             </div>
         </section>
     `;
+    
+    // Appliquer les traductions
+    translateContent(currentLang);
+}
+
+function loadRevueSection() {
+    const mainContent = document.getElementById('main-content');
+    // ID de la publication Instagram
+    const instagramPostId = "DRXKtpnjsk8";
+    
+    mainContent.innerHTML = `
+        <section class="revue-section">
+            <div class="revue-header">
+                <h2>${translations[currentLang].revueTitle}</h2>
+                <p>${translations[currentLang].revueSubtitle}</p>
+            </div>
+            
+            <div class="revue-content">
+                <div class="revue-instruction">
+                    <div class="instruction-icon">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <p class="instruction-text">Cliquez sur la vidéo ci-dessous pour découvrir notre annonce</p>
+                    <div class="instruction-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+                <div class="revue-video-container">
+                    <div class="revue-video-wrapper">
+                        <div class="revue-video-overlay">
+                            <div class="play-indicator">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="revue-instagram-embed">
+                            <blockquote class="instagram-media" 
+                                data-instgrm-permalink="https://www.instagram.com/p/${instagramPostId}/" 
+                                data-instgrm-version="14"
+                                style="width: 100%; max-width: 100%; min-width: 100%;">
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `;
+    
+    // Charger le script Instagram embed si ce n'est pas déjà fait
+    if (!window.instgrm) {
+        const script = document.createElement('script');
+        script.src = 'https://www.instagram.com/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+        
+        // Attendre que le script charge et forcer le style horizontal
+        script.onload = function() {
+            setTimeout(() => {
+                const iframes = document.querySelectorAll('.revue-instagram-embed iframe');
+                iframes.forEach(iframe => {
+                    iframe.style.width = '100%';
+                    iframe.style.height = 'auto';
+                    iframe.style.minHeight = '500px';
+                    iframe.style.aspectRatio = '16 / 9';
+                });
+            }, 1000);
+        };
+    } else {
+        // Si le script est déjà chargé, traiter les embeds
+        if (window.instgrm && window.instgrm.Embeds) {
+            window.instgrm.Embeds.process();
+            setTimeout(() => {
+                const iframes = document.querySelectorAll('.revue-instagram-embed iframe');
+                iframes.forEach(iframe => {
+                    iframe.style.width = '100%';
+                    iframe.style.height = 'auto';
+                    iframe.style.minHeight = '500px';
+                    iframe.style.aspectRatio = '16 / 9';
+                });
+            }, 1000);
+        }
+    }
     
     // Appliquer les traductions
     translateContent(currentLang);
