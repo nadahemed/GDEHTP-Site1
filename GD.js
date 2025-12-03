@@ -621,6 +621,9 @@ const carouselHTML = {
                     <div class="carousel-slide">
                         <img src="_52A5326.jpg" alt="Photo 4">
                     </div>
+                    <div class="carousel-slide">
+                        <img src="3 brrothers.jpg" alt="Photo 5">
+                    </div>
                 </div>
                 <button class="carousel-btn prev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
                 <button class="carousel-btn next" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
@@ -646,6 +649,9 @@ const carouselHTML = {
                     <div class="carousel-slide">
                         <img src="_52A5326.jpg" alt="Photo 4">
                     </div>
+                    <div class="carousel-slide">
+                        <img src="3 brrothers.jpg" alt="Photo 5">
+                    </div>
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
                 <button class="carousel-btn next" aria-label="Next">&#10095;</button>
@@ -670,6 +676,9 @@ const carouselHTML = {
                     </div>
                     <div class=\"carousel-slide\">
                         <img src=\"_52A5326.jpg\" alt=\"الصورة 4\">
+                    </div>
+                    <div class=\"carousel-slide\">
+                        <img src=\"3 brrothers.jpg\" alt=\"الصورة 5\">
                     </div>
                 </div>
                 <button class=\"carousel-btn prev\" aria-label=\"السابق\">&#10094;</button>
@@ -1283,6 +1292,9 @@ document.querySelectorAll('.nav-item').forEach(item => {
                             </div>
                             <div class="carousel-slide">
                                 <img src="Capture d'écran 2025-07-19 034957.png" alt="Photo 5">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="3 brrothers.jpg" alt="Photo 6">
                             </div>
                         </div>
                         <button class="carousel-btn prev" aria-label="Précédent">&#10094;</button>
@@ -2837,16 +2849,70 @@ document.addEventListener('DOMContentLoaded', function() {
             loadSection(section);
         });
     });
+    
+    // Gestion des clics sur les liens du footer
+    document.querySelectorAll('.footer-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = this.getAttribute('data-section');
+            if (section) {
+                loadSection(section);
+            }
+        });
+    });
+    
+    // Charger la section depuis l'URL au chargement de la page
+    function loadSectionFromURL() {
+        const hash = window.location.hash.substring(1); // Enlever le #
+        if (hash) {
+            // Vérifier que la section existe
+            const validSections = ['accueil', 'a-propos', 'palmares', 'bureau', 'evenements', 'revue', 'contact'];
+            if (validSections.includes(hash)) {
+                loadSection(hash);
+                return;
+            }
+        }
+        // Par défaut, charger l'accueil
+        loadSection('accueil');
+    }
+    
+    // Charger la section depuis l'URL au chargement
+    loadSectionFromURL();
+    
+    // Gérer les changements de hash dans l'URL (navigation avant/arrière)
+    window.addEventListener('hashchange', function() {
+        loadSectionFromURL();
+    });
+    
+    // Gérer le bouton retour du navigateur
+    window.addEventListener('popstate', function() {
+        loadSectionFromURL();
+    });
 });
 
 function loadSection(section) {
     currentSection = section;
+    // Mettre à jour l'URL avec le hash de la section
+    if (section === 'accueil') {
+        // Pour l'accueil, on peut utiliser '/' ou pas de hash
+        if (window.location.hash) {
+            history.replaceState(null, '', window.location.pathname);
+        }
+    } else {
+        // Pour les autres sections, ajouter le hash dans l'URL
+        history.pushState(null, '', `#${section}`);
+    }
+    
     // Mettre à jour la navigation active
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('active');
     });
     const navItem = document.querySelector(`[data-section="${section}"]`);
     if (navItem) navItem.classList.add('active');
+    
+    // Scroll vers le haut de la page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     // Charger le contenu
     if (section === 'accueil') {
         loadHomeSection();

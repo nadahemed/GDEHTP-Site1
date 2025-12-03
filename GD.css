@@ -6916,3 +6916,9 @@ body.dark .revue-instagram-embed {
         border-radius: 10px;
     }
 }
+.carousel-slide img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    width: auto; /* Pour préserver les proportions */
+}
