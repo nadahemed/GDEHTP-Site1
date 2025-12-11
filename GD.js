@@ -3369,70 +3369,77 @@ function loadRevueSection() {
             </div>
             
             <div class="revue-content">
-                <div class="revue-instruction">
-                    <div class="instruction-icon">
-                        <i class="fas fa-hand-pointer"></i>
+                <div class="revue-main-card">
+                    <div class="revue-card-decoration-top">
+                        <div class="decoration-corner top-left"></div>
+                        <div class="decoration-corner top-right"></div>
                     </div>
-                    <p class="instruction-text">Cliquez sur la vidéo ci-dessous pour découvrir notre annonce</p>
-                    <div class="instruction-arrow">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-                
-                <div class="revue-video-container">
-                    <div class="revue-video-wrapper">
-                        <div class="revue-video-overlay">
-                            <div class="play-indicator">
-                                <i class="fas fa-play-circle"></i>
+                    
+                    <div class="revue-card-content">
+                        <div class="revue-card-header">
+                            <div class="revue-main-icon">
+                                <div class="icon-glow"></div>
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <div class="revue-header-text">
+                                <h3 class="revue-main-title">Tazlayjit</h3>
+                                <p class="revue-main-subtitle">Le Maroc entre patriotisme et chauvinisme national</p>
+                                <div class="revue-edition-badge">
+                                    <i class="fas fa-star"></i>
+                                    <span>1ère Édition</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="revue-instagram-embed">
-                            <blockquote class="instagram-media" 
-                                data-instgrm-permalink="https://www.instagram.com/p/${instagramPostId}/" 
-                                data-instgrm-version="14"
-                                style="width: 100%; max-width: 100%; min-width: 100%;">
-                            </blockquote>
+                        
+                        <div class="revue-pdf-display">
+                            <div class="pdf-display-container">
+                                <div class="pdf-display-frame">
+                                    <div class="pdf-display-shine"></div>
+                                    <div class="pdf-display-content">
+                                        <div class="pdf-display-icon-wrapper">
+                                            <div class="pdf-display-icon-glow"></div>
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="pdf-display-info">
+                                            <h4>Revue Tazlayjit</h4>
+                                            <p>Première édition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
+                        <div class="revue-action-buttons">
+                            <a href="Revue/1ere édition de revue (11).pdf" download="Tazlayjit - 1ere edition.pdf" class="revue-download-btn">
+                                <div class="btn-icon-wrapper">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <span>Télécharger la revue</span>
+                                <div class="btn-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            
+                            <a href="Revue/1ere édition de revue (11).pdf" target="_blank" class="revue-view-btn">
+                                <div class="btn-icon-wrapper">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <span>Voir en ligne</span>
+                                <div class="btn-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="revue-card-decoration-bottom">
+                        <div class="decoration-corner bottom-left"></div>
+                        <div class="decoration-corner bottom-right"></div>
                     </div>
                 </div>
             </div>
         </section>
     `;
-    
-    // Charger le script Instagram embed si ce n'est pas déjà fait
-    if (!window.instgrm) {
-        const script = document.createElement('script');
-        script.src = 'https://www.instagram.com/embed.js';
-        script.async = true;
-        document.body.appendChild(script);
-        
-        // Attendre que le script charge et forcer le style horizontal
-        script.onload = function() {
-            setTimeout(() => {
-                const iframes = document.querySelectorAll('.revue-instagram-embed iframe');
-                iframes.forEach(iframe => {
-                    iframe.style.width = '100%';
-                    iframe.style.height = 'auto';
-                    iframe.style.minHeight = '500px';
-                    iframe.style.aspectRatio = '16 / 9';
-                });
-            }, 1000);
-        };
-    } else {
-        // Si le script est déjà chargé, traiter les embeds
-        if (window.instgrm && window.instgrm.Embeds) {
-            window.instgrm.Embeds.process();
-            setTimeout(() => {
-                const iframes = document.querySelectorAll('.revue-instagram-embed iframe');
-                iframes.forEach(iframe => {
-                    iframe.style.width = '100%';
-                    iframe.style.height = 'auto';
-                    iframe.style.minHeight = '500px';
-                    iframe.style.aspectRatio = '16 / 9';
-                });
-            }, 1000);
-        }
-    }
     
     // Appliquer les traductions
     translateContent(currentLang);
