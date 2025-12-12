@@ -3410,7 +3410,7 @@ function loadRevueSection() {
                         </div>
                         
                         <div class="revue-action-buttons">
-                            <a href="Revue/1ere édition de revue (11).pdf" download="Tazlayjit - 1ere edition.pdf" class="revue-download-btn">
+                            <a href="Revue/1ere édition de revue (11) (1).pdf" download="Tazlayjit - 1ere edition.pdf" class="revue-download-btn">
                                 <div class="btn-icon-wrapper">
                                     <i class="fas fa-download"></i>
                                 </div>
@@ -3420,7 +3420,7 @@ function loadRevueSection() {
                                 </div>
                             </a>
                             
-                            <a href="Revue/1ere édition de revue (11).pdf" target="_blank" class="revue-view-btn">
+                            <a href="Revue/1ere édition de revue (11) (1).pdf" target="_blank" class="revue-view-btn">
                                 <div class="btn-icon-wrapper">
                                     <i class="fas fa-eye"></i>
                                 </div>
