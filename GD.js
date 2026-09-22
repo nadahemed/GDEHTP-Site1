@@ -3023,7 +3023,7 @@ function loadBureauSection() {
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].frenchSectionChief}</h3>
-                        <p class="member-name">El Manssouri</p>
+                        <p class="member-name">El Manssouri Otmane</p>
                         <div class="member-badge"><i class="fas fa-flag"></i></div>
                     </div>
                 </div>
