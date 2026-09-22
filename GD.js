@@ -105,9 +105,9 @@ const translations = {
         veeLocation: 'EHTP, Casablanca',
         bureauTitle: '🏛️ Bureau Exécutif',
         bureauSubtitle: 'Notre équipe dirigeante dédiée à l\'excellence',
-        president: 'Président',
-        vicePresident: 'Vice-Président',
-        secretaryGeneral: 'Secrétaire Général',
+        president: 'Présidente',
+        vicePresident: 'Vice-Présidente',
+        secretaryGeneral: 'Secrétaire Générale',
         mediaDesignChief: 'Chef Media & Design',
         frenchSectionChief: 'Chef Section Française',
         englishSectionChief: 'Chef Section Anglaise',
@@ -841,9 +841,9 @@ function translateContent(lang) {
             'email-placeholder': 'Votre email',
             'message-placeholder': 'Votre message',
             'executive-bureau': 'Bureau Exécutif',
-            'president': 'Président',
-            'vice-president': 'Vice-Président',
-            'secretary-general': 'Secrétaire Général',
+            'president': 'Présidente',
+            'vice-president': 'Vice-Présidente',
+            'secretary-general': 'Secrétaire Générale',
             'explore': 'Explorer',
             'anniversaryTitle': '🎉 Anniversaire du club',
             'anniversaryText': 'Le club a été fondé le <b>23 octobre 2020</b> <span style="font-size:1.2em">🎂</span>'
@@ -1748,22 +1748,22 @@ document.querySelectorAll('.nav-item').forEach(item => {
                             <div class="member-avatar">
                                 <i class="fas fa-user-tie"></i>
                             </div>
-                            <h3>Président</h3>
-                            <p class="member-name">NADAHE Mohammed</p>
+                            <h3>Présidente</h3>
+                            <p class="member-name">Gouzi Imane</p>
                         </div>
                         <div class="bureau-member-card">
                             <div class="member-avatar">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
-                            <h3>Vice-Président</h3>
-                            <p class="member-name">EL KHADIRI Douae</p>
+                            <h3>Vice-Présidente</h3>
+                            <p class="member-name">Kibach Farah</p>
                         </div>
                         <div class="bureau-member-card">
                             <div class="member-avatar">
                                 <i class="fas fa-user-edit"></i>
                             </div>
-                            <h3>Secrétaire Général</h3>
-                            <p class="member-name">Ahmed Fouad Goughelt</p>
+                            <h3>Secrétaire Générale</h3>
+                            <p class="member-name">Chaouki Doha</p>
                         </div>
                     </div>
                 </section>
@@ -2957,7 +2957,7 @@ function loadBureauSection() {
                 <!-- Président au centre -->
                 <div class="bureau-member-card president-card">
                     <div class="member-photo-frame">
-                        <img src="board/821570.jpg" alt="Nadahe Mohammed - Président" class="member-photo-img">
+                        <img src="board/821570.jpg" alt="Gouzi Imane - Présidente" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].president}</h3>
@@ -2969,7 +2969,11 @@ function loadBureauSection() {
                 <!-- Vice-Président -->
                 <div class="bureau-member-card vice-president-card">
                     <div class="member-photo-frame">
+<<<<<<< HEAD
                         <img src="board/Kibach Farah.png" alt="Kibach Farah - Vice-Président" class="member-photo-img">
+=======
+                        <img src="board/Kibach Farah.png" alt="Kibach Farah - Vice-Présidente" class="member-photo-img">
+>>>>>>> 9213a49 (new one)
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].vicePresident}</h3>
