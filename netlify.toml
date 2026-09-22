@@ -1,4 +1,7 @@
 [build]
+  # No site generator needed — this repository is a plain static site.
+  # Override any Netlify UI build command (e.g. Jekyll) by running a harmless command.
+  command = "echo 'No build - static site'"
   publish = "."
 
 [[redirects]]
