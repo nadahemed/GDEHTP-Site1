@@ -1312,7 +1312,7 @@ body.dark .theme-toggle:focus {
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 100px;
     height: 4px;
     background: linear-gradient(90deg, #e2b889, #f5cda7, #e2b889);
     border-radius: 2px;
@@ -1355,10 +1355,10 @@ body.dark .theme-toggle:focus {
 }
 
 .member-avatar {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     background: linear-gradient(135deg, #a05a2c 0%, #e2b889 100%);
-    border-radius: 50%;
+    border-radius: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1402,7 +1402,7 @@ body.dark .theme-toggle:focus {
     }
     
     .bureau-member {
-        padding: 24px 20px;
+        padding: 40px 40px;
     }
     
     .member-avatar {
@@ -1436,8 +1436,8 @@ body.dark .theme-toggle:focus {
     }
     
     .member-avatar {
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 150px;
     }
     
     .member-avatar i {

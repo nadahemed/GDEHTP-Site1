@@ -2957,11 +2957,11 @@ function loadBureauSection() {
                 <!-- Président au centre -->
                 <div class="bureau-member-card president-card">
                     <div class="member-photo-frame">
-                        <img src="board/nadahe.png" alt="Nadahe Mohammed - Président" class="member-photo-img">
+                        <img src="board/821570.jpg" alt="Nadahe Mohammed - Président" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].president}</h3>
-                        <p class="member-name">Nadahe Mohammed</p>
+                        <p class="member-name">Gouzi Imane</p>
                         <div class="member-badge"><i class="fas fa-crown"></i></div>
                     </div>
                 </div>
@@ -2969,23 +2969,35 @@ function loadBureauSection() {
                 <!-- Vice-Président -->
                 <div class="bureau-member-card vice-president-card">
                     <div class="member-photo-frame">
-                        <img src="board/DOUAA.png" alt="Douae El Khadiri - Vice-Président" class="member-photo-img">
+                        <img src="board/Kibach Farah.png" alt="Douae El Khadiri - Vice-Président" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].vicePresident}</h3>
-                        <p class="member-name">Douae El Khadiri</p>
+                        <p class="member-name">Kibach Farah</p>
+                        <div class="member-badge"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                </div>
+                <!-- Secrétaire Général -->
+                <div class="bureau-member-card vice-president-card">
+                    <div class="member-photo-frame">
+                        <img src="board/Chaouki Doha.png" alt="Douae El Khadiri - Vice-Président" class="member-photo-img">
+                    </div>
+                    <div class="member-info">
+                        <h3>${translations[currentLang].vicePresident}</h3>
+                        <p class="member-name">Chaouki Doha</p>
                         <div class="member-badge"><i class="fas fa-chart-line"></i></div>
                     </div>
                 </div>
 
+
                 <!-- Chef Formation -->
                 <div class="bureau-member-card training-card">
                     <div class="member-photo-frame">
-                        <img src="board/niama.png" alt="Niama Abid - Chef Formation" class="member-photo-img">
+                        <img src="board/Mali khaoula.png" alt="Niama Abid - Chef Formation" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].trainingChief}</h3>
-                        <p class="member-name">Niama Abid</p>
+                        <p class="member-name">Mali khaoula</p>
                         <div class="member-badge"><i class="fas fa-graduation-cap"></i></div>
                     </div>
                 </div>
@@ -2995,11 +3007,11 @@ function loadBureauSection() {
                 <!-- Chef Media & Design -->
                 <div class="bureau-member-card media-card">
                     <div class="member-photo-frame">
-                        <img src="board/gd2.png" alt="Amine Hamdaoui - Chef Media & Design" class="member-photo-img">
+                        <img src="board/lahseini hayat.png" alt="Amine Hamdaoui - Chef Media & Design" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].mediaDesignChief}</h3>
-                        <p class="member-name">Amine Hamdaoui</p>
+                        <p class="member-name">Lahseini Hayat</p>
                         <div class="member-badge"><i class="fas fa-palette"></i></div>
                     </div>
                 </div>
@@ -3007,11 +3019,11 @@ function loadBureauSection() {
                 <!-- Chef Section Française -->
                 <div class="bureau-member-card french-card">
                     <div class="member-photo-frame">
-                        <img src="board/BERETE FINAL.png" alt="Bérete Lonceny - Chef Section Française" class="member-photo-img">
+                        <img src="board/El Manssouri Otmane.png" alt="Bérete Lonceny - Chef Section Française" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].frenchSectionChief}</h3>
-                        <p class="member-name">Bérete Lonceny</p>
+                        <p class="member-name">El Manssouri</p>
                         <div class="member-badge"><i class="fas fa-flag"></i></div>
                     </div>
                 </div>
@@ -3019,11 +3031,11 @@ function loadBureauSection() {
                 <!-- Chef Section Anglaise -->
                 <div class="bureau-member-card english-card">
                     <div class="member-photo-frame">
-                        <img src="board/Yassine.jpg" alt="Mohammed Yassine Djaouane - Chef Section Anglaise" class="member-photo-img">
+                        <img src="board/Bouchta Nassima.png" alt="Mohammed Yassine Djaouane - Chef Section Anglaise" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].englishSectionChief}</h3>
-                        <p class="member-name">Mohammed Yassine Djaouane</p>
+                        <p class="member-name">Bouchta Nassima</p>
                         <div class="member-badge"><i class="fas fa-flag-usa"></i></div>
                     </div>
                 </div>
@@ -3031,11 +3043,11 @@ function loadBureauSection() {
                 <!-- Chef Section Arabe -->
                 <div class="bureau-member-card arabic-card">
                     <div class="member-photo-frame">
-                        <img src="board/afi.png" alt="Salma Bouabane - Chef Section Arabe" class="member-photo-img">
+                        <img src="board/عصماء سيرين بنبلى.png" alt="Salma Bouabane - Chef Section Arabe" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].arabicSectionChief}</h3>
-                        <p class="member-name">Mohamed EL Afi</p>
+                        <p class="member-name">Asmaa Sirine Benbella</p>
                         <div class="member-badge"><i class="fas fa-star-and-crescent"></i></div>
                     </div>
                 </div>
@@ -3043,11 +3055,11 @@ function loadBureauSection() {
                 <!-- Chef Sponsoring -->
                 <div class="bureau-member-card sponsoring-card">
                     <div class="member-photo-frame">
-                        <img src="board/zainab.png" alt="Zainab Qasmi - Chef Sponsoring" class="member-photo-img">
+                        <img src="board/kanza masbahi.png" alt="Zainab Qasmi - Chef Sponsoring" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].sponsoringChief}</h3>
-                        <p class="member-name">Zainab Qasmi</p>
+                        <p class="member-name">Kanza Masbahi</p>
                         <div class="member-badge"><i class="fas fa-handshake"></i></div>
                     </div>
                 </div>
@@ -3057,11 +3069,11 @@ function loadBureauSection() {
                 <!-- Responsable Revue -->
                 <div class="bureau-member-card revue-card">
                     <div class="member-photo-frame">
-                        <img src="board/AICHA.jpg" alt="Aicha Mabchour - Responsable Revue" class="member-photo-img">
+                        <img src="board/Taghzouti Aya.png" alt="Aicha Mabchour - Responsable Revue" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>Responsable Revue</h3>
-                        <p class="member-name">Aicha Mabchour</p>
+                        <p class="member-name">Taghzouti Aya</p>
                         <div class="member-badge"><i class="fas fa-newspaper"></i></div>
                     </div>
                 </div>
