@@ -2969,7 +2969,7 @@ function loadBureauSection() {
                 <!-- Vice-Président -->
                 <div class="bureau-member-card vice-president-card">
                     <div class="member-photo-frame">
-                        <img src="board/Kibach Farah.png" alt="Douae El Khadiri - Vice-Président" class="member-photo-img">
+                        <img src="board/Kibach Farah.png" alt="Kibach Farah - Vice-Président" class="member-photo-img">
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].vicePresident}</h3>
@@ -2978,14 +2978,14 @@ function loadBureauSection() {
                     </div>
                 </div>
                 <!-- Secrétaire Général -->
-                <div class="bureau-member-card vice-president-card">
+                <div class="bureau-member-card Secretaire-General-card">
                     <div class="member-photo-frame">
-                        <img src="board/Chaouki Doha.png" alt="Douae El Khadiri - Vice-Président" class="member-photo-img">
+                        <img src="board/Chaouki Doha.png" alt="Chaouki Doha - Secrétaire Général" class="member-photo-img">
                     </div>
                     <div class="member-info">
-                        <h3>${translations[currentLang].vicePresident}</h3>
+                        <h3>${translations[currentLang].secretaryGeneral}</h3>
                         <p class="member-name">Chaouki Doha</p>
-                        <div class="member-badge"><i class="fas fa-chart-line"></i></div>
+                        <div class="member-badge"><i class="fas fa-user-tie"></i></div>
                     </div>
                 </div>
 
