@@ -4167,6 +4167,11 @@ body.dark .competition-card.invictus-competition .members-list li:hover {
     grid-row: 1;
 }
 
+.secretary-card {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
 /* === LIGNE 2: CHEF FORMATION, MEDIA, SPONSORING === */
 .training-card {
     grid-column: 1 / 2;

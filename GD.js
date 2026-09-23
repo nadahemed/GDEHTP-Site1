@@ -1711,6 +1711,46 @@ document.querySelectorAll('.nav-item').forEach(item => {
                             </div>
                         </div>
                     </div>
+                    <div class="competition-card allstar-national-champion-competition">
+                            <div class="competition-trophy">
+                                <img src="trfevee2026.jpeg" alt="Trophée de la compétition VEE version 2" class="trophy-image">
+                                <div class="trophy-glow"></div>
+                            </div>
+                            <div class="competition-info">
+                                <h3>La valse des esprits éclairés</h3>
+                                <p class="competition-description">VEE 2nd edition</p>
+                                
+                                <div class="competition-details">
+                                    <div class="theme-section">
+                                        <h4>🎯 Thème de la compétition</h4>
+                                        <p class="theme-text">Le progrès : Entre Emancipation et ruine de l'humanité  </p>
+                                    </div>
+                                    
+                                    <div class="section-info">
+                                        <h4>📚 Section</h4>
+                                        <p class="section-text">Francaise</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="winning-team">
+                                    <h4>Champions</h4>
+                                    <div class="team-content">
+                                        <div class="team-photo">
+                                            <img src="poo.jpg" alt="Gouzi Imane - Champion National All Star Debate" class="team-image" style="object-fit: cover; object-position: center; width: 100%; height: 200px;">
+                                        </div>
+                                        <div class="team-members">
+                                            <h5>Champions</h5>
+                                            <ul class="members-list">
+                                                <li>Gouzi Imane</li>
+                                                <li> Otmane El Manssouri</li>
+                                                <li> Aya Taghzouti</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="palmares-section">
                     <div class="palmares-header">
@@ -1724,6 +1764,13 @@ document.querySelectorAll('.nav-item').forEach(item => {
                             </div>
                             <h3>Championnat National 2023</h3>
                             <p>Première place au championnat national de débat</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>La vasle des esprtis elcaires 2</h3>
+                            <p>Deuxième place — Compétition interuniversitaire</p>
                         </div>
                         <div class="achievement-card">
                             <div class="achievement-icon">
@@ -1744,21 +1791,21 @@ document.querySelectorAll('.nav-item').forEach(item => {
                         <p>Rencontrez notre équipe dirigeante</p>
                     </div>
                     <div class="bureau-content">
-                        <div class="bureau-member-card">
+                        <div class="bureau-member-card president-card">
                             <div class="member-avatar">
                                 <i class="fas fa-user-tie"></i>
                             </div>
                             <h3>Présidente</h3>
                             <p class="member-name">Gouzi Imane</p>
                         </div>
-                        <div class="bureau-member-card">
+                        <div class="bureau-member-card vice-president-card">
                             <div class="member-avatar">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
                             <h3>Vice-Présidente</h3>
                             <p class="member-name">Kibach Farah</p>
                         </div>
-                        <div class="bureau-member-card">
+                        <div class="bureau-member-card secretary-card">
                             <div class="member-avatar">
                                 <i class="fas fa-user-edit"></i>
                             </div>
@@ -2969,11 +3016,7 @@ function loadBureauSection() {
                 <!-- Vice-Président -->
                 <div class="bureau-member-card vice-president-card">
                     <div class="member-photo-frame">
-<<<<<<< HEAD
                         <img src="board/Kibach Farah.png" alt="Kibach Farah - Vice-Président" class="member-photo-img">
-=======
-                        <img src="board/Kibach Farah.png" alt="Kibach Farah - Vice-Présidente" class="member-photo-img">
->>>>>>> 9213a49 (new one)
                     </div>
                     <div class="member-info">
                         <h3>${translations[currentLang].vicePresident}</h3>
